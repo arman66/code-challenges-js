@@ -38,3 +38,31 @@ console.log(array);
 
 
 uniqueSort([1, 4, 4, 4, 4, 4, 3, 2, 1, 2]);
+
+
+function isPalindrome(string) {
+	var myString;
+  var stringReverse="";
+  myString = string.toLowerCase().replace(/[^a-z']/g, '');
+
+
+
+  for(var i=myString.length-1 ;i>=0; i--)
+    {
+      stringReverse += myString[i];
+    }
+
+ if(myString===stringReverse)
+   {
+     console.log("it is a palindrome");
+     return true;
+   }
+  else
+    {
+      console.log("it is not  a palindrome");
+      return false;
+    }
+
+}
+
+isPalindrome('A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal-Panama!');
