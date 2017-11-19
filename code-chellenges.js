@@ -114,3 +114,25 @@ function minMaxLengthAverage(arr) {
 }
 
 minMaxLengthAverage([4.54, 8.32, 5.20]);
+
+//Funtions receives an array of arrays of nums, and returns the largest number of each seperate array2
+
+function findLargestNums(arr) {
+
+var array2=[];
+
+  arr.forEach((oneArray)=>{
+    oneArray.sort(function(a, b){
+      return b- a;
+    });
+
+    array2.push(oneArray[0]);
+     console.log(oneArray[0]);
+  });
+
+  return array2;
+
+}
+
+
+findLargestNums([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]);
