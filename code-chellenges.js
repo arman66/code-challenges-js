@@ -163,3 +163,18 @@ function timeForMilkAndCookies(date) {
 
 
 timeForMilkAndCookies(new Date(2013, 11, 24));
+
+
+//Fucntion to check if the second string argument is the ending of the first string
+
+
+function checkEnding(str1, str2) {
+
+
+  console.log(str1.endsWith(str2));
+  return str1.endsWith(str2);
+}
+
+
+
+checkEnding('femenine','nine');
