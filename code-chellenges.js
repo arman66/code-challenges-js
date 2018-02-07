@@ -178,3 +178,19 @@ function checkEnding(str1, str2) {
 
 
 checkEnding('femenine','nine');
+
+
+
+//Fucntion recieves a string, ex. " John Doe" and reverses it to " Doe John"
+
+
+function nameShuffle(str) {
+
+  console.log(str);
+	var strnew = str.split(' ').reverse().join(' ');
+  console.log(strnew);
+  return strnew;
+
+}
+
+nameShuffle("Armando Acosta");
