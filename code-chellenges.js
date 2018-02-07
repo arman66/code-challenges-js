@@ -136,3 +136,30 @@ var array2=[];
 
 
 findLargestNums([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]);
+
+// function to check date and see if its xmas eve or not
+
+function timeForMilkAndCookies(date) {
+
+  var month = date.getMonth();
+  var day = date.getDate();
+	console.log(month);
+  	console.log(day);
+
+
+  if(month!= 11 || day!= 24)
+  {
+    console.log("its not xmas");
+    return false;
+  }
+  else{
+    console.log('its xmas, merry christmas');
+    return true;
+  }
+}
+
+
+
+
+
+timeForMilkAndCookies(new Date(2013, 11, 24));
