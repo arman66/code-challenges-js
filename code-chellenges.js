@@ -265,3 +265,20 @@ function reverse(str) {
 
 
 reverse("Everything is based on a simple rule: Quality is the best business plan.");
+
+//Function to filter a array depending on data type
+
+function filterArray(arr) {
+
+var newStr= [];
+  for(var i= 0;i<arr.length;i++)
+    {
+      if(typeof arr[i]==='number'){
+      newStr.push(arr[i]);
+      }
+    }
+  console.log(newStr);
+  return newStr;
+
+
+}
