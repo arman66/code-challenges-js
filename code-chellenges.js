@@ -282,3 +282,20 @@ var newStr= [];
 
 
 }
+
+/*
+//using the filter function
+function filterArray(arr) {
+  return arr.filter(n => typeof n === 'number');
+}
+
+*/
+
+//Fucntion returns all the even number in an array using the filter Funtions
+function noOdds(arr) {
+  console.log(arr);
+  return arr.filter(n => n%2 === 0);
+}
+
+
+noOdds([718, 991, 449, 644, 380, 440]);
