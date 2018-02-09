@@ -194,3 +194,74 @@ function nameShuffle(str) {
 }
 
 nameShuffle("Armando Acosta");
+
+//Function obtains teh absolute sum of the array, making negative numbers positive to count for the sumTwoSmallestNums
+function getAbsSum(arr){
+  console.log(arr.length);
+
+  var leng= arr.length;
+  var sum= 0;
+
+  for( var i = 0; i< leng; i++)
+  {
+    if(arr[i]<0)
+      {
+        arr[i]= arr[i]* -1;
+      }
+    sum += arr[i];
+
+  }
+  console.log(sum);
+  return sum;
+
+}
+
+
+
+//function returns the word count of a string passed in
+
+function countWords(str){
+
+  console.log(str.length);
+  var strsplit= str.split(' ');
+
+  console.log(strsplit.length);
+
+  return strsplit.length;
+
+
+}
+
+
+countWords('Just an example here move along');
+
+
+
+
+//Fucntion to reverse stirng to alphabetical order
+
+
+function AlphabetSoup(str) {
+
+  var str2 = str.split('').sort().join("");
+  console.log(str2);
+  return str2;
+}
+
+
+
+AlphabetSoup('javascript');
+
+
+
+// Function reverses a string
+function reverse(str) {
+  console.log(str);
+
+  var newStr = str.split('').reverse().join('');
+  console.log(newStr);
+  return newStr;
+}
+
+
+reverse("Everything is based on a simple rule: Quality is the best business plan.");
