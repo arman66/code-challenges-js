@@ -299,3 +299,25 @@ function noOdds(arr) {
 
 
 noOdds([718, 991, 449, 644, 380, 440]);
+
+//Find the smallest in a set of positve/negative or decimals
+
+function findSmallestNum(arr) {
+
+  console.log(arr);
+  var temp= 3000;
+  for(var i = 0; i<arr.length ; i++)
+    {
+
+      if(arr[i]< temp)
+        {
+          temp = arr[i];
+        }
+
+    }
+
+  return temp;
+}
+
+
+findSmallestNum([0.4356, 0.8795, 0.5435, -0.9999]);
