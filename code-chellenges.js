@@ -321,3 +321,25 @@ function findSmallestNum(arr) {
 
 
 findSmallestNum([0.4356, 0.8795, 0.5435, -0.9999]);
+
+
+//function finds the number of vowels in a string
+
+function countVowels(str) {
+  console.log(str);
+
+  var array= str.split('');
+  var counter= 0;
+  for(var i = 0 ; i< array.length; i++)
+    {
+      if(array[i]=== 'a'||array[i]=== 'e'||array[i]=== 'i'||
+      array[i]=== 'o'||array[i]=== 'u')
+        {
+          counter ++;
+
+        }
+    }
+  return counter;
+}
+
+countVowels("Celebration");
