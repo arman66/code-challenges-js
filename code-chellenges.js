@@ -343,3 +343,31 @@ function countVowels(str) {
 }
 
 countVowels("Celebration");
+
+
+//fucntion returns array with min and max numbers
+function minMax(arr) {
+  console.log(arr);
+
+  newStr= [];
+  var temp =100000;
+  var temp2 = 0;
+  for(var i=0; i< arr.length; i ++)
+    {
+      if( arr[i]< temp)
+        {
+          temp = arr[i];
+        }
+      else if( arr[i]> temp2)
+        {
+          temp2= arr[i];
+        }
+    }
+  newStr.push(temp);
+  newStr.push(temp2);
+  console.log(newStr);
+  return newStr;
+}
+
+
+minMax([1, 2, 3, 4, 5]);
