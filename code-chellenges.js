@@ -351,7 +351,7 @@ function minMax(arr) {
 
   newStr= [];
   var temp =100000;
-  var temp2 = 0;
+  var temp2 = -100000;
   for(var i=0; i< arr.length; i ++)
     {
       if( arr[i]< temp)
@@ -371,3 +371,26 @@ function minMax(arr) {
 
 
 minMax([1, 2, 3, 4, 5]);
+
+// function takes a string as argument and returns string with each character repeated twice
+
+function doubleChar(str) {
+
+
+
+  var newStr= str.split('');
+  var temp = '';
+  var blah=[];
+  for (var i = 0; i < newStr.length; i++)
+    {
+      temp = newStr[i];
+      blah.push(temp);
+      blah.push(temp);
+    }
+
+   console.log(blah.join(''));
+
+  return blah.join('');
+}
+
+doubleChar('string');
