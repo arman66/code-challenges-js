@@ -394,3 +394,23 @@ function doubleChar(str) {
 }
 
 doubleChar('string');
+
+//fucntion takes an array of numbers, and sorts it to accending order, if its null it returns null
+
+function sortNumsAscending(arr) {
+  console.log(arr);
+  if(arr=== null)
+    {
+      return arr = [];
+    }
+  else{
+  arr.sort(function(a,b){
+           return a - b;
+           });
+  }
+
+  return arr;
+}
+
+
+sortNumsAscending([80, 29, 4, -95, -24, 85]);
