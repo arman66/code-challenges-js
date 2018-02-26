@@ -414,3 +414,13 @@ function sortNumsAscending(arr) {
 
 
 sortNumsAscending([80, 29, 4, -95, -24, 85]);
+
+//returns the last element of an array2
+
+function getLastItem(arr) {
+
+
+  return arr.pop();
+}
+
+getLastItem(['cat', 'dog', 'duck']);
