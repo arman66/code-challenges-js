@@ -424,3 +424,41 @@ function getLastItem(arr) {
 }
 
 getLastItem(['cat', 'dog', 'duck']);
+
+
+//function returns the most common occurences of elements in an array
+
+function highestOccurrence(arr){
+
+  temp= [];
+  newArray = [];
+  unique=[];
+  var count = 0;
+  for(var i = 0 ; i < arr.length ; i++)
+    {
+      temp = arr[i];
+      if(temp != arr[i +1])
+        {
+          continue;
+        }
+      else
+        {
+          temp = arr[i+1];
+
+          newArray.push(temp);
+          count ++;
+        }
+
+    }
+    	unique = Array.from(new Set(newArray));
+      console.log(newArray);
+  		console.log(unique);
+
+      return unique;
+}
+
+
+
+
+
+highestOccurrence([ 1 , 2,2,2,2 , 3 , 3 , "a" , "b" , "b" ,"b","b", "c" ,"c"]);
