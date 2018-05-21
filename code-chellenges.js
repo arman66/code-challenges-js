@@ -462,3 +462,29 @@ function highestOccurrence(arr){
 
 
 highestOccurrence([ 1 , 2,2,2,2 , 3 , 3 , "a" , "b" , "b" ,"b","b", "c" ,"c"]);
+
+
+//Find the Minimum, Maximum, Length and Average Values
+
+function minMaxLengthAverage(arr) {
+	arr.sort(function(a, b) {
+  return a - b;
+});
+	console.log(arr);
+	console.log("the length of the array is "+ arr.length);
+	console.log("the min values is " + arr[0]);
+	console.log("the max values is " + arr[arr.length-1]);
+	var sum = 0;
+	for( i=0; i< arr.length; i++){
+		sum += arr[i];
+	}
+	var average = sum/arr.length;
+	console.log("the average is " + average);
+
+	return( [arr[0],arr[arr.length - 1], arr.length, average]);
+}
+
+
+
+
+minMaxLengthAverage([6, 9, 15, -2, 92, 11]);
