@@ -488,3 +488,39 @@ function minMaxLengthAverage(arr) {
 
 
 minMaxLengthAverage([6, 9, 15, -2, 92, 11]);
+
+
+//Add up the Numbers from a Single Number
+function addUp(num) {
+	if(num < 0 )
+		{
+			return -1;
+		}
+	else if( num== 0)
+		{
+			return 0;
+		}
+	else
+		{
+			return ( num + addUp(num - 1));
+		}
+
+}
+
+
+//Filter out Strings from an Array
+
+function filterArray(arr) {
+
+	
+	function isNumber(obj) {
+  return typeof(obj) === 'number';
+}
+	var arr2 = arr.filter(isNumber);
+
+	return arr2;
+}
+
+
+
+filterArray([1, 2, "aasf", "1", "123", 123]);
