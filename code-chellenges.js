@@ -512,7 +512,7 @@ function addUp(num) {
 
 function filterArray(arr) {
 
-	
+
 	function isNumber(obj) {
   return typeof(obj) === 'number';
 }
@@ -524,3 +524,16 @@ function filterArray(arr) {
 
 
 filterArray([1, 2, "aasf", "1", "123", 123]);
+
+//Flip the Boolean
+
+function reverse(bool) {
+	if(typeof bool !== 'boolean')
+		{
+			return "boolean expected";
+		}
+	else
+		{
+			return !(bool);
+		}
+}
