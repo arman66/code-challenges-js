@@ -537,3 +537,21 @@ function reverse(bool) {
 			return !(bool);
 		}
 }
+
+//Repeat the Same Item Multiple Times
+
+
+function repeat(item, times) {
+
+
+	var total= [];
+	for(i= 0; i< times; i ++)
+		{
+			total.push(item);
+		}
+	return total;
+
+}
+
+
+repeat('butt',5);
