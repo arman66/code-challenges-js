@@ -555,3 +555,16 @@ function repeat(item, times) {
 
 
 repeat('butt',5);
+
+
+//Create a function that returns true if a number is prime and false if it's not
+
+function isPrime(num){
+
+  for (var i=2;i<num;i++){
+    if (num%i==0){
+      return false;
+    }
+  }
+  return true;
+}
