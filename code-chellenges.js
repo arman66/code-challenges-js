@@ -568,3 +568,19 @@ function isPrime(num){
   }
   return true;
 }
+
+//Create a function that takes an array of numbers and returns the mean value.
+
+function mean(arr){
+
+	var sum = 0;
+	var average = 0;
+	for(i=0;i<arr.length;i++){
+		sum += arr[i];
+
+	}
+	average= sum/arr.length;
+	average = parseFloat(average.toFixed(2));
+
+	return average;
+}
